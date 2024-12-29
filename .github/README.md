@@ -3,7 +3,8 @@
 - [Project Description](#project-description)
 - [Installation](#installation)
 - [Usage](#usage)
-- -[Usage](#usage)
+  - [Generating Heatmaps](#generating-heatmaps)
+  - [Evaluating Models](#evaluating-models)
 - [Repository Structure](#repository-structure)
 - [Citation](#citation)
 
