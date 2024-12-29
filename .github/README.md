@@ -18,5 +18,5 @@
 1. **Clone the Repository**  
    Clone the repository to your local machine using the following command:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/SMILE-Image-Editing.git
-   cd SMILE-Image-Editing
+   git clone https://github.com/Sara068/Mapping-the-Mind-of-an-Instruction-based-Image-Editing-using-SMILE.git
+   cd Mapping-the-Mind-of-an-Instruction-based-Image-Editing-using-SMILE
