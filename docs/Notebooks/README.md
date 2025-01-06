@@ -30,7 +30,9 @@ The box plot below visualizes the distribution of word weights for each term in 
 
 **Figure**: This box plot illustrates the distribution of word weights for each term in the given prompt.
 
+---
+
 ### Code to Generate the Box Plot
 
 The Jupyter Notebooks containing the code to generate this box plot are available in the following directory:  
-[`docs/Notebooks/Box_plot_10images`](docs/Notebooks/Box_plot_10images)
+[`docs/Notebooks/Box_plot_10images`](../Notebooks/Box_plot_10images)
