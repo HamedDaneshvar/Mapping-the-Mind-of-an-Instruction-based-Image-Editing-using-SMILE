@@ -18,14 +18,4 @@ The t-SNE plot is saved in the following location:
 
 The following code snippet was used to display the t-SNE plot in a Jupyter Notebook:
 
-```python
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
 
-# Load and display the image
-img = mpimg.imread('../Figures/plot_tsne (2).jpg')  # Path to the image
-plt.figure(figsize=(10, 10))
-plt.imshow(img)
-plt.axis('off')  # Hide axes for a cleaner visualization
-plt.title("2D t-SNE visualization of image embeddings", fontsize=14)
-plt.show()
