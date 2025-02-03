@@ -1,11 +1,8 @@
 ## Mapping the Mind of an Instruction-based Image Editing using <a href = "https://github.com/Dependable-Intelligent-Systems-Lab/xwhy"><b>SMILE</b></a>
 
 [Zeinab Dehghani](https://github.com/Sara068), [Koorosh Aslansefat](https://github.com/koo-ec), [Adil Khan], [Adín Ramírez Rivera], [Franky George], [Muhammad Khalid].
-## 📂 Google Colab Notebook
 
-To view and run the notebook in Google Colab, click the link below:
-
-[🚀 Open Notebook in Google Colab](https://colab.research.google.com/drive/1E-HAiu2tORA2AgT1OkqAxlLzEvSJ5kY8?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1E-HAiu2tORA2AgT1OkqAxlLzEvSJ5kY8)
 
 ## Project Description
 <p align="justify">The lack of interpretability in diffusion-based image generation models remains a significant barrier to transparency and user trust, despite recent advancements in generating high-quality images from textual descriptions. To address this challenge, we propose SMILE (Statistical Model-agnostic Interpretability with Local Explanations), a novel, model-agnostic approach designed to provide localized explanations and visual heatmaps that clarify how specific textual elements influence image generation. Applied across leading models—including Pix2Pix, DALL-E, Learnable Region, and Diffusers-Inpaint—our method demonstrates substantial improvements in interpretability and reliability, as evidenced by rigorous evaluations on stability, accuracy, fidelity, and consistency metrics. These findings underscore the potential of model-agnostic interpretability solutions, paving the way for transparent and trustworthy AI in high-stakes applications like healthcare and autonomous driving, while inviting further exploration into the role of interpretability in advancing reliable image editing models.</p>
