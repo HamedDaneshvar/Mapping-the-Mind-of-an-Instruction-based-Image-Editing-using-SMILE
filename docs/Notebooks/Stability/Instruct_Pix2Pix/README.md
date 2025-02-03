@@ -1,1 +1,1 @@
-
+To quantify stability, We modify an image with ten different prompts for image editing, extracting the coefficient and weight of each word. Then, by adding `\#\#\#` at the end of each prompt as input text, we extract the coefficients again and compute the Jaccard index to compare them. Finally, we calculate the average metric.
