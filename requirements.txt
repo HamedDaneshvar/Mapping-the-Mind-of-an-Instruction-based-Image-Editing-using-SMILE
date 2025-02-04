@@ -1,0 +1,10 @@
+numpy
+torch
+Pillow
+matplotlib
+scipy
+transformers
+sentence-transformers
+scikit-learn
+gensim
+tensorflow
