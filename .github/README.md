@@ -62,6 +62,39 @@ Once dependencies are installed, you can run the main script using the following
 ```bash
 python SMILE_Image_Editing.py
 ```
+
+## 🔥 Generating Heatmaps
+Heatmaps in this project are used to visualize the influence of textual prompts on image edits. This process involves:
+
+1. **Perturbed Prompts Generation**: The input text is broken into individual words, and variations (perturbations) of the text are created by adding/removing specific words.
+2. **Image Generation**: The model applies edits based on the original and perturbed prompts, generating multiple images.
+3. **Feature Extraction**: Using **DINOv2**, embeddings are extracted from generated images to focus on key visual elements.
+4. **Similarity Calculation**: **Wasserstein Distance** is computed between original and perturbed image embeddings to measure the influence of textual variations.
+5. **Heatmap Generation**: A linear regression model maps the influence of each word in the prompt, highlighting significant textual elements in a heatmap.
+
+These heatmaps provide a visual representation of how textual modifications impact the final image, aiding in interpretability.
+
+## 📊 Evaluation of Model Performance
+To assess the performance of the explainability framework, we use the following evaluation metrics:
+
+1️⃣ **Accuracy**  
+   - Measures how well model explanations align with ground truth.
+   - Uses **Attention AUROC, Attention F1 Score (ATT F1), and Attention Accuracy (ATT ACC)** to compare attribution scores with expected word importance.
+
+2️⃣ **Stability**  
+   - Ensures that minor variations in input (e.g., punctuation changes) do not cause drastic changes in attribution.
+   - Measured using the **Jaccard Index** to quantify consistency across minor perturbations.
+
+3️⃣ **Consistency**  
+   - Evaluates whether the model produces stable explanations for the same input across multiple runs.
+   - Measured using **variance and standard deviation** of explanation scores.
+
+4️⃣ **Fidelity**  
+   - Assesses how well the explainability model aligns with the black-box model it explains.
+   - Metrics include **Weighted Mean Squared Error (WMSE), R² coefficient, Mean Absolute Error (MAE), and Mean L1 & L2 losses**.
+
+These metrics ensure that our explainability method is reliable, interpretable, and stable, making **SMILE** a robust framework for understanding instruction-based image editing models.
+
 ## 📜 Citation
 
 If you use this work, please cite the following paper:
