@@ -64,15 +64,13 @@ python SMILE_Image_Editing.py
 ```
 
 ## 🔥 Generating Heatmaps
-Heatmaps in this project are used to visualize the influence of textual prompts on image edits. This process involves:
 
-1. **Perturbed Prompts Generation**: The input text is broken into individual words, and variations (perturbations) of the text are created by adding/removing specific words.
-2. **Image Generation**: The model applies edits based on the original and perturbed prompts, generating multiple images.
-3. **Feature Extraction**: Using **DINOv2**, embeddings are extracted from generated images to focus on key visual elements.
-4. **Similarity Calculation**: **Wasserstein Distance** is computed between original and perturbed image embeddings to measure the influence of textual variations.
-5. **Heatmap Generation**: A linear regression model maps the influence of each word in the prompt, highlighting significant textual elements in a heatmap.
+## 🔥 Generating Heatmaps
 
-These heatmaps provide a visual representation of how textual modifications impact the final image, aiding in interpretability.
+The process of generating heatmaps is explained in detail in the following flowchart:
+
+🔗 **[View Flowchart](https://github.com/Sara068/Explain-Instruction-based-Image-Editing-models/blob/main/docs/Figures/flow.png)**
+
 
 ## 📊 Evaluation of Model Performance
 To assess the performance of the explainability framework, we use the following evaluation metrics:
