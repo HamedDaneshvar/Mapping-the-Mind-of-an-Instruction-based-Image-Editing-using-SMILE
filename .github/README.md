@@ -62,9 +62,11 @@ Once dependencies are installed, you can run the main script using the following
 ```bash
 python SMILE_Image_Editing.py
 ```
-📜 Citation
+## 📜 Citation
 
 If you use this work, please cite the following paper:
+
+```bibtex
 @article{dehghani2024mapping,
   title={Mapping the Mind of an Instruction-based Image Editing using SMILE},
   author={Dehghani, Zeinab and Aslansefat, Koorosh and Khan, Adil and Rivera, Ad{\'\i}n Ram{\'\i}rez and George, Franky and Khalid, Muhammad},
