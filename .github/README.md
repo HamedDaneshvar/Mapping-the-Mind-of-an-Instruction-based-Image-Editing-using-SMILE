@@ -46,3 +46,11 @@ env\Scripts\activate  # Windows
 
 pip install -r requirements.txt
 
+## Running the Script
+
+Once dependencies are installed, you can run the main script using the following command:
+
+```bash
+python SMILE_Image Editing.py
+
+
