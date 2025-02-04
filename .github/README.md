@@ -34,22 +34,35 @@
 
 ## Installation
 
+## 🚀 Installation Guide
+
+Follow these steps to set up and run the project.
+
 ### 1️⃣ Clone the Repository
 To clone the repository to your local machine, use the following command:
 ```bash
 git clone https://github.com/Sara068/Mapping-the-Mind-of-an-Instruction-based-Image-Editing-using-SMILE.git
 cd Mapping-the-Mind-of-an-Instruction-based-Image-Editing-using-SMILE
+```
+
 ### 2️⃣ Create and Activate a Virtual Environment
+```bash
 python -m venv env
 source env/bin/activate  # macOS/Linux
 env\Scripts\activate  # Windows
+```
+
 ### 3️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
 ### 4️⃣ Running the Script Locally
 Once dependencies are installed, you can run the main script using the following command:
-
 ```bash
-python SMILE_Image Editing.py
+python SMILE_Image_Editing.py
+```
+
+
 
 
