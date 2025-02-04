@@ -63,7 +63,6 @@ Once dependencies are installed, you can run the main script using the following
 python SMILE_Image_Editing.py
 ```
 
-## 🔥 Generating Heatmaps
 
 ## 🔥 Generating Heatmaps
 
