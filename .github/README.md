@@ -24,7 +24,6 @@
 
 🚀 This repository explores the application of **SMILE (Statistical Model-Agnostic Interpretability for Local Explanation)** on **Gemini**, DeepMind’s newly developed model. Our approach enhances interpretability in instruction-based image editing models, allowing for a deeper understanding of how textual prompts influence AI-generated transformations.  
 
-## 📌 Explore the Code on Kaggle  
 🔗 [View the Kaggle Notebook](https://www.kaggle.com/code/zeinabdehghani/explain-gemini-image-editing-with-smile)  
 ## Method Overview
 
