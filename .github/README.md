@@ -2,12 +2,12 @@
 [![Open In Colab (Original)](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1E-HAiu2tORA2AgT1OkqAxlLzEvSJ5kY8)
 [![Open In Colab (Latest Notebook)](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1HygOW6XsKgXdC6FhJhh2Vi6a5lnitMzB?usp=sharing)
 
-[Zeinab Dehghani](https://github.com/Sara068), [Koorosh Aslansefat](https://github.com/koo-ec), [Hamed Daneshvar](http://github.com/HamedDaneshvar), [Adil Khan], [Adín Ramírez Rivera], [Franky George], [Muhammad Khalid].
+[Zeinab Dehghani](https://github.com/Sara068), [Koorosh Aslansefat](https://github.com/koo-ec), [Hamed Daneshvar](http://github.com/HamedDaneshvar), [Mojgan Hashemian](https://github.com/mojgan1987), Adil Khan, Adín Ramírez Rivera, Franky George, Muhammad Khalid, Mona Faraji Niri.
 
 
 
 ## Project Description
-<p align="justify">The lack of interpretability in diffusion-based image generation models remains a significant barrier to transparency and user trust, despite recent advancements in generating high-quality images from textual descriptions. To address this challenge, we propose SMILE (Statistical Model-agnostic Interpretability with Local Explanations), a novel, model-agnostic approach designed to provide localized explanations and visual heatmaps that clarify how specific textual elements influence image generation. Applied across leading models—including Pix2Pix, DALL-E, Learnable Region, and Diffusers-Inpaint—our method demonstrates substantial improvements in interpretability and reliability, as evidenced by rigorous evaluations on stability, accuracy, fidelity, and consistency metrics. These findings underscore the potential of model-agnostic interpretability solutions, paving the way for transparent and trustworthy AI in high-stakes applications like healthcare and autonomous driving, while inviting further exploration into the role of interpretability in advancing reliable image editing models.</p>
+<p align="justify">Instruction-based image editing models modify images using text prompts, yet most existing explainability methods require access to internal model states and therefore cannot be applied to black-box or closed-access systems. As a result, the influence of individual instruction tokens on the final edit remains largely unexplained in widely used instruction-based image editing models. This paper introduces IE-SMILE, a model-agnostic extension of SMILE for word-level explainability in instruction-based image editing. The contributions of this work are: (i) a similarity-based explanation formulation that explains image editing by modelling semantic changes relative to a reference edited image rather than approximating a prediction score, (ii) a prompt-side attribution method that fixes the input image, perturbs instruction tokens, and estimates their influence using Wasserstein distances over DINOv2 embeddings with a surrogate model, and (iii) a token-level evaluation protocol for image editing explainability using accuracy, stability, fidelity, and consistency metrics. This article evaluates IE-SMILE on the I2E-Bench benchmark, across both open-source editors and commercial models, including GPT-based image models, Nano Banana, and SeeDream, and shows that it produces coherent and stable word-level attributions in black-box settings</p>
 
 <img src="https://raw.githubusercontent.com/Sara068/Mapping-the-Mind-of-an-Instruction-based-Image-Editing-using-SMILE/refs/heads/main/docs/Figures/diff%20prompt%20(1).png" alt="example">
 
@@ -18,6 +18,10 @@
 - [IE-SMILE SeeDream on Kaggle](https://www.kaggle.com/code/kooaslansefat/i2e-bench-ie-smile-seedream)
 - [Attribute AUC Notebook on Kaggle](https://www.kaggle.com/code/hameddaneshvar/i2e-bench-auc/)
 - [Stability Test Nootbook on Kaggle](https://www.kaggle.com/code/hameddaneshvar/i2e-bench-stability)
+
+### Test Results (Google Drive)
+All generated outputs, heatmaps, and evaluation results from running the tests are available here:  
+🔗 [View Test Results on Google Drive](https://drive.google.com/drive/folders/1VV5TbkfHlRGe3pkZcp-qZpIFRXj2Sha5?usp=drive_link)
 
 ## Video Explaining the Approach
 
@@ -57,6 +61,23 @@ Follow these steps to set up and run the project.
 
 ### Latest Changes
 - Now we support **Gemini**, **SeeDream**, and **OpenAI** as commercial models too.
+
+### API Keys Configuration
+To use the commercial models (Gemini, OpenAI, and ARK), you need to provide your API keys.
+
+1️⃣ Copy the example environment file:
+```bash
+cp .env.example .env
+```
+
+2️⃣ Edit the `.env` file and replace the placeholders with your actual API keys:
+```dotenv
+GEMINI_API_KEY="YOUR-API-KEY"
+OPENAI_API_KEY="YOUR-API-KEY"
+ARK_API_KEY="YOUR-API-KEY"
+```
+
+The project will automatically load these keys using `python-dotenv`.
 
 ### Recommended: Using uv (Latest and Preferred Method)
 **uv** is the fastest and most reliable way to manage dependencies for this project. It automatically handles virtual environments and uses the `uv.lock` file for reproducible installations.
@@ -159,3 +180,5 @@ If you use this work, please cite the following paper:
   year={2024}
 }
 ```
+
+> **Note:** The core **SMILE** implementation is available in the official package: [XWhy on GitHub](https://github.com/Dependable-Intelligent-Systems-Lab/xwhy). You can install it via `pip install xwhy`. This repository builds upon XWhy to apply SMILE specifically to instruction-based image editing tasks.
